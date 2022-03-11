@@ -5,6 +5,8 @@ Config.ChairObjects = {
 }
 
 Config.ChairZones = {
+
+    -- gabz pizzeria chairs (not complete)
     vector4(806.08, -751.52, 26.78, 271.8), 
     vector4(805.81, -741.32, 26.78, 113.9),
     vector4(808.05, -751.57, 26.78, 96.43), 

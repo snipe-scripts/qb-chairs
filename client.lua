@@ -19,9 +19,8 @@ end)
 CreateThread(function ()
     CreateThread(function()
         for k, v in pairs(Config.ChairZones) do
-            print(v)
             exports["qb-target"]:AddBoxZone("chairzones"..k,vector3(v.x, v.y, v.z), 0.6, 0.6, {
-                name="seat"..k,
+                name="chairzones"..k,
                 heading=34,
                 debugPoly=false,
                 minZ=v.z - 2.0,
