@@ -1,8 +1,20 @@
 Config = {}
 
+--[[
+    objName = hash of the object (use delete lazer or koil debug to get the hash of the object, if hash doesnt exist, use chairzones)
+    offsetX = X offset if the player isnt sitting on chair properly
+    offsetY = Y offset if the player isnt sitting on chair properly
+    offsetZ = Z offset if the player isnt sitting on chair properly
+    direction = this will always be 180 while in some cases it needs to be altered slightly to say 165
+    You will have to play around with the offsets to get the right position.
+]]--
 Config.ChairObjects = {
     {objname = -1118419705, offsetX = 0.0 ,offsetY = 0.0 , offsetZ = 0.5, direction = 180},
 }
+
+--[[
+    
+]]--
 
 Config.ChairZones = {
 
