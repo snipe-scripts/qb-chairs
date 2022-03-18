@@ -10,6 +10,7 @@ Config = {}
 ]]--
 Config.ChairObjects = {
     {objname = -1118419705, offsetX = 0.0 ,offsetY = 0.0 , offsetZ = 0.5, direction = 180},
+    
 }
 
 --[[

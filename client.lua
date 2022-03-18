@@ -16,29 +16,27 @@ CreateThread(function ()
     end
 end)
 
-CreateThread(function ()
-    CreateThread(function()
-        for k, v in pairs(Config.ChairZones) do
-            exports["qb-target"]:AddBoxZone("chairzones"..k,vector3(v.x, v.y, v.z), 0.6, 0.6, {
-                name="chairzones"..k,
-                heading=34,
-                debugPoly=false,
-                minZ=v.z - 2.0,
-                maxZ=v.z 
-            }, {
-                options = {
-                    {
-                        event = "qb-chairs:client:sitchairzones",
-                        icon = "fas fa-chair",
-                        label = "Take A Seat",
-                        coords = v
-                    },
+CreateThread(function()
+    for k, v in pairs(Config.ChairZones) do
+        exports["qb-target"]:AddBoxZone("chairzones"..k,vector3(v.x, v.y, v.z), 0.6, 0.6, {
+            name="chairzones"..k,
+            heading=34,
+            debugPoly=false,
+            minZ=v.z - 2.0,
+            maxZ=v.z 
+        }, {
+            options = {
+                {
+                    event = "qb-chairs:client:sitchairzones",
+                    icon = "fas fa-chair",
+                    label = "Take A Seat",
+                    coords = v
                 },
-                job = {"all"},
-                distance = 2.5
-            })
-        end
-    end)
+            },
+            job = {"all"},
+            distance = 2.5
+        })
+    end
 end)
 
 RegisterNetEvent("qb-chairs:client:sitchairobject", function(data)
